@@ -1,0 +1,12 @@
+{
+  "regularExpressions": {
+    "timeStamp": "\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}",
+    "logFile": ".*(?<role>(RESOURCEMANAGER|NODEMANAGER))-(?<host>.+)\\.log\\.out",
+    "configFile": ".*-site\\.xml"
+  },
+  "directoryNames": {
+    "directoryNameForYarnRelatedLogs": "workspace",
+    "subdirectoryNameForNodeLogs": "logs",
+    "subdirectoryNameForConfigFiles": "configs"
+  }
+}

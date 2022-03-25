@@ -1,0 +1,74 @@
+@startuml
+
+interface Command {
+}
+
+abstract class SimpleSearch {
+}
+
+abstract class HybridSearch {
+}
+
+abstract class ParametrizedSearch {
+}
+
+class AppAttempts {
+}
+
+class Grep {
+}
+
+class Applications {
+}
+
+class AppAttempts {
+}
+
+class AppAttempts {
+}
+
+class Containers {
+}
+
+
+class Events {
+}
+
+class Exceptions {
+}
+
+class Resources {
+}
+
+class States {
+}
+
+class ExitCommand {
+}
+
+class HelpCommand {
+}
+
+class Info {
+}
+
+class Roles {
+}
+
+Command ^-- ExitCommand
+Command ^-- HelpCommand
+Command ^-- SimpleSearch
+Command ^-- HybridSearch
+Command ^-- ParametrizedSearch
+SimpleSearch ^-- Info
+SimpleSearch ^-- Roles
+HybridSearch ^-- Grep
+HybridSearch ^-- AppAttempts
+ParametrizedSearch ^-- Applications
+ParametrizedSearch ^-- Containers
+ParametrizedSearch ^-- Events
+ParametrizedSearch ^-- States
+ParametrizedSearch ^-- Exceptions
+ParametrizedSearch ^-- Resources
+
+@enduml

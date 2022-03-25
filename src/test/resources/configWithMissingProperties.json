@@ -1,0 +1,9 @@
+{
+  "regularExpressions": {
+    "timeStamp": "\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}",
+    "configFile": ".*-site\\.xml"
+  },
+  "directoryNames": {
+    "directoryNameForYarnRelatedLogs": "workspace"
+  }
+}

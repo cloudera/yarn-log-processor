@@ -1,0 +1,53 @@
+@startuml
+
+class App {
+  main()
+}
+
+class Subshell {
+  void run()
+}
+
+class CommandLine {
+  String readLine()
+}
+
+class CommandExecutor {
+  String executeCommand()
+}
+
+interface Command {
+  Printable generatePrintable()
+}
+
+class OptionParser {
+  void parse()
+  boolean checkParameter()
+  String getParameter()
+}
+
+interface Executable {
+  Query query
+  Formatter formatter
+  void execute()
+  Printable getPrintable()
+}
+
+abstract class Formatter {
+  Printable format()
+}
+
+class SearchEngine {
+  List<Matcher> createMatchers()
+}
+
+App --> Subshell
+Subshell --> CommandLine
+Subshell --> CommandExecutor
+CommandExecutor --> Command
+Command --> OptionParser
+Command --> Executable
+Executable --> SearchEngine
+Executable --> Formatter
+
+@enduml

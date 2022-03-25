@@ -1,0 +1,19 @@
+{
+  "regularExpressions": {
+    "timeStamp": "\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}",
+    "extra1": "extra1",
+    "logFile": ".*(?<role>(RESOURCEMANAGER|NODEMANAGER))-(?<host>.+)\\.log\\.out",
+    "configFile": ".*-site\\.xml"
+  },
+  "directoryNames": {
+    "directoryNameForYarnRelatedLogs": "workspace",
+    "subdirectoryNameForNodeLogs": "logs",
+    "subdirectoryNameForConfigFiles": "configs",
+    "extra3": "extra3"
+  },
+  "cache": {
+    "cacheDirectory": "./.blp/cache",
+    "cacheType": "InMemoryLRUCache",
+    "cacheItemCapacity": "10"
+  }
+}

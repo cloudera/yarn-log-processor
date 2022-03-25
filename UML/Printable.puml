@@ -1,0 +1,31 @@
+@startuml
+
+interface Printable {
+}
+
+class EmptyPrintable {
+}
+
+class StringPrintable {
+}
+
+abstract class RowList {
+}
+
+class ComposedPrintable {
+}
+
+class Column {
+}
+
+class Table {
+}
+
+Printable ^-- EmptyPrintable
+Printable ^-- StringPrintable
+Printable ^-- RowList
+Printable ^-- ComposedPrintable
+RowList ^-- Column
+RowList ^-- Table
+
+@enduml

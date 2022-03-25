@@ -1,0 +1,33 @@
+@startuml
+
+class App {
+  main()
+}
+
+class Preprocessor {
+  Context process()
+}
+
+class CliParser {
+  InputParams read()
+}
+
+class FileDownloader {
+  File downloadByUrl()
+}
+
+class FileExtractor {
+  File extract()
+}
+
+class FileFilter {
+  void filter()
+}
+
+App --> Preprocessor
+Preprocessor --> CliParser
+Preprocessor --> FileDownloader
+Preprocessor --> FileExtractor
+Preprocessor --> FileFilter
+
+@enduml
